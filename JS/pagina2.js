@@ -13,9 +13,8 @@ function mostrarNombre() {
 }
 
 function borrar() {
- sessionStorage.removeItem("nombre", "ciudad");
+ sessionStorage.clear();
  mostrarNombre()
- mostrarCiudad()
 }
 document.addEventListener("DOMContentLoaded", mostrarNombre);
 document.getElementById("btn-borrar").addEventListener("click", borrar);
