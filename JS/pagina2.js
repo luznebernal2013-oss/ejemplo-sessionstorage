@@ -1,12 +1,14 @@
 function mostrarNombre() {
     const nombre = sessionStorage.getItem("nombre");
-   console.log("aca")
+    const ciudad = sessionStorage.getItem("ciudad");
+   
     if(nombre===null){
         document.getElementById("saludo").textContent = "No hay ningun nombre guardado.";
 
 
     } else {
-    document.getElementById("saludo").textContent = "Hola, " + nombre;
+    document.getElementById("saludo").textContent = "Hola, " + nombre + ", de " + ciudad;
+
  }
 }
 
